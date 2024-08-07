@@ -66,6 +66,7 @@
 }
 
 .recommender-section {
+  width: 90%;
   padding-left: 5%;
   padding-right: 5%;
   height: 17%;
@@ -74,16 +75,17 @@
 
 .recommender {
   height: 40%;
+  width: 100%;
   font-size: 0.5rem;
-  align-content: center;
   font-family: "Title_Medium";
+  text-align-last: justify;
 }
 
 .recommend-content {
   text-align: justify;
   height: 60%;
   font-size: 0.49rem;
-  align-content: center;
+  align-content: top;
   font-family: "Batang_Regular";
 }
 .logo {
