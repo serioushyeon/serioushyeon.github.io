@@ -6,7 +6,8 @@ import "./Card.css";
 
 const Card = ({ num, title, contents }) => {
   const componentRef = useRef();
-  const [selectedContent, setSelectedContent] = useState(contents[0]);
+  const randomIndex = Math.floor(Math.random() * contents.length);
+  const [selectedContent, setSelectedContent] = useState(contents[randomIndex]);
 
   const handlePrint = useReactToPrint({
     content: () => componentRef.current,
