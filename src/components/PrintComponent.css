@@ -1,0 +1,107 @@
+.print-component {
+  font-family: Arial, sans-serif;
+  width: 79mm;
+  height: 120mm;
+}
+
+.print-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 18%;
+}
+
+.num {
+  height: 100%;
+  font-size: 2.4rem;
+  width: 30%;
+  align-content: center;
+  text-align: center;
+  font-family: "Title_Bold";
+}
+
+.title {
+  height: 100%;
+  width: 56%;
+  margin-left: 12%;
+  margin-right: 12%;
+  font-size: 1.2rem;
+  align-content: center;
+  text-align: center;
+  font-family: "Batang_Regular";
+}
+
+.book-title {
+  border-bottom: 0.1mm solid #000;
+  text-align: left;
+  height: 9%;
+  width: 85%;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding-left: 5%;
+  text-align: left;
+  align-content: center;
+  font-size: 0.5rem;
+  font-family: "Title_Medium";
+}
+
+.locate {
+  text-align: right;
+  align-content: center;
+  padding-right: 6%;
+  height: 9%;
+  font-size: 0.5rem;
+  font-family: "Title_Light";
+}
+
+.content {
+  margin-bottom: 20px;
+  height: 25%;
+  padding: 5%;
+  font-size: 2.8px;
+  font-size: 0.7rem;
+  font-family: "Batang_Regular";
+  line-height: 150%;
+}
+
+.recommender-section {
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 17%;
+  align-content: center;
+}
+
+.recommender {
+  height: 40%;
+  font-size: 0.5rem;
+  align-content: center;
+  font-family: "Title_Medium";
+}
+
+.recommend-content {
+  text-align: justify;
+  height: 60%;
+  font-size: 0.49rem;
+  align-content: center;
+  font-family: "Batang_Regular";
+}
+.logo {
+  display: flex; /* Flexbox 사용 */
+  justify-content: center; /* 수평 가운데 정렬 */
+  height: 12%;
+  width: 100%;
+  align-content: center;
+}
+.logo img {
+  object-fit: none; /* 이미지 비율 유지 */
+}
+@media print {
+  @page {
+    size: 79mm 120mm;
+    margin: 0;
+  }
+  body {
+    margin: 0;
+  }
+}
