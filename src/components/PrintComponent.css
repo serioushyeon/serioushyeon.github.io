@@ -1,7 +1,7 @@
 .print-component {
   font-family: Arial, sans-serif;
-  width: 100%;
-  height: 100%;
+  width: 72mm;
+  height: 120mm;
 }
 
 .print-header {
@@ -14,7 +14,7 @@
 
 .num {
   height: 100%;
-  font-size: 7vh;
+  font-size: 2.4rem;
   width: 30%;
   align-content: center;
   text-align: center;
@@ -26,7 +26,7 @@
   width: 56%;
   margin-left: 12%;
   margin-right: 12%;
-  font-size: 3.6vh;
+  font-size: 1rem;
   align-content: center;
   text-align: center;
   font-family: "Batang_Regular";
@@ -42,28 +42,25 @@
   padding-left: 5%;
   text-align: left;
   align-content: center;
-  font-size: 3vh;
+  font-size: 0.5rem;
   font-family: "Title_Medium";
 }
 
 .locate {
   text-align: right;
   align-content: center;
-  align-items: center;
-  align-self: center;
-  justify-content: center;
   padding-right: 6%;
-  height: 6%;
-  font-size: 2vh;
+  height: 9%;
+  font-size: 0.5rem;
   font-family: "Title_Light";
 }
 
 .content {
   margin-bottom: 20px;
-  height: 26%;
+  height: 25%;
   padding: 5%;
   font-size: 2.8px;
-  font-size: 2.8vh;
+  font-size: 0.7rem;
   font-family: "Batang_Regular";
   line-height: 150%;
 }
@@ -72,24 +69,22 @@
   width: 90%;
   padding-left: 5%;
   padding-right: 5%;
-  height: 19%;
+  height: 17%;
   align-content: center;
 }
 
 .recommender {
-  height: 30%;
+  height: 40%;
   width: 100%;
-  align-content: center;
-  font-size: 1.5vh;
+  font-size: 0.5rem;
   font-family: "Title_Medium";
   text-align-last: justify;
 }
 
 .recommend-content {
   text-align: justify;
-  height: 70%;
-  font-size: 2vh;
-  line-height: 150%;
+  height: 60%;
+  font-size: 0.49rem;
   align-content: top;
   font-family: "Batang_Regular";
 }
@@ -101,17 +96,15 @@
   align-content: center;
 }
 .logo img {
-  object-fit: contain; /* 이미지 비율 유지 */
+  object-fit: none; /* 이미지 비율 유지 */
 }
 @media print {
   @page {
+    size: 72mm 120mm;
     margin: 0;
-    size: auto;
-    padding: 0;
   }
 
   body {
     margin: 0;
-    padding: 0;
   }
 }
