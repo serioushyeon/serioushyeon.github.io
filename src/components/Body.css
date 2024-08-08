@@ -1,10 +1,68 @@
 .body-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70%;
+  margin-bottom: 5%;
+}
+
+.cards-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 22px;
-  padding: 20px;
-  background-color: #f2f1e7;
-  flex: 1 1 auto;
-  overflow-y: auto;
+  gap: 0px;
+  width: 100%;
   height: 100%;
+}
+.card {
+  background-color: #fff;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  z-index: 999;
+  transform: scale(1.05);
+  border: 1.2px solid black;
+}
+
+.card-content {
+  font-size: 18px;
+}
+
+.card-placeholder {
+  background-color: #5c8356;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Pretendard-ExtraLight";
+  line-height: 130%;
+  font-size: 1.3vw;
+  color: white;
+}
+
+.usage-info {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: #f47d27;
+  color: white;
+  font-family: "Pretendard-Bold";
+  font-size: 1.3vw;
+}
+
+.usage-title {
+  height: 50%;
+  align-content: center;
+  text-align: center;
+  font-family: "Pretendard-SemiBold";
+  font-size: 1.3vw;
+}
+
+.usage-count {
+  height: 50%;
+  align-content: top;
+  font-weight: bold;
+  font-family: "Pretendard-ExtraLight";
+  font-size: 2vw;
 }

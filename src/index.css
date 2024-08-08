@@ -3,8 +3,6 @@ body,
 #root {
   height: 100%;
   margin: 0;
-  margin-left: 3%;
-  margin-right: 3%;
   padding: 0;
 }
 @media print {
@@ -42,4 +40,39 @@ body {
 @font-face {
   font-family: "Title_Medium";
   src: url("./fonts/Title_Medium.woff");
+}
+@font-face {
+  font-family: "Pretendard-Bold";
+  src: url("./fonts/Pretendard-Bold.woff");
+}
+
+@font-face {
+  font-family: "Pretendard-ExtraBold";
+  src: url("./fonts/Pretendard-ExtraBold.woff");
+}
+
+@font-face {
+  font-family: "Pretendard-ExtraLight";
+  src: url("./fonts/Pretendard-ExtraLight.woff");
+}
+
+@font-face {
+  font-family: "Pretendard-Light";
+  src: url("./fonts/Pretendard-Light.woff");
+}
+@font-face {
+  font-family: "Pretendard-Medium";
+  src: url("./fonts/Pretendard-Medium.woff");
+}
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("./fonts/Pretendard-Regular.woff");
+}
+@font-face {
+  font-family: "Pretendard-SemiBold";
+  src: url("./fonts/Pretendard-SemiBold.woff");
+}
+@font-face {
+  font-family: "Pretendard-Thin";
+  src: url("./fonts/Pretendard-Thin.woff");
 }

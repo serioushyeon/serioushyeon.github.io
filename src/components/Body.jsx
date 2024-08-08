@@ -1,9 +1,23 @@
 // src/Body.js
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Body.css";
 import Card from "./Card";
 
 const Body = () => {
+  const [count, setCount] = useState(() => {
+    const savedCount = localStorage.getItem("count");
+    return savedCount ? parseInt(savedCount, 10) : 0;
+  });
+
+  // count 변경 시 로컬 스토리지에 저장
+  useEffect(() => {
+    localStorage.setItem("count", count);
+  }, [count]);
+
+  const handlePrint = () => {
+    setCount((prevCount) => prevCount + 1);
+  };
+
   const cardContents1 = [
     {
       bookTitle: "셰익스피어의 위대한 문장들",
@@ -257,66 +271,76 @@ const Body = () => {
   const cardsData = [
     {
       num: "1",
-      title: "힐링이 되는 책을 읽고 싶어요",
+      title: "힐링이 되는 책을\n읽고 싶어요",
       content: cardContents1,
     },
     {
       num: "2",
-      title: "근사하고 품격있는 삶을 원해요",
+      title: "근사하고 품격있는\n삶을 원해요",
       content: cardContents2,
     },
     {
       num: "3",
-      title: "인생에서 가장 소중한 것을 찾고싶어요",
+      title: "인생에서 가장\n소중한 것을 찾고싶어요",
       content: cardContents3,
     },
     {
       num: "4",
-      title: "모든 일이 우울하고 삶에 의욕이 없을 때",
+      title: "모든 일이 우울하고\n삶에 의욕이 없을 때",
       content: cardContents4,
     },
     {
       num: "5",
-      title: "과연 이렇게 사는 삶이 맞는 삶일까요?",
+      title: "과연 이렇게 사는 삶이\n맞는 삶일까요?",
       content: cardContents5,
     },
     {
       num: "6",
-      title: "무슨 책부터 읽어야 할 지 고민인 그대에게",
+      title: "무슨 책부터 읽어야 \n할 지 고민인 그대에게",
       content: cardContents6,
     },
     {
       num: "7",
-      title: "명언이나 명구로 위로받고 싶어요",
+      title: "명언이나 명구로\n위로받고 싶어요",
       content: cardContents7,
     },
     {
       num: "8",
-      title: "주체적인 여성으로 살고 싶어요 ",
+      title: "주체적인 여성으로\n살고 싶어요 ",
       content: cardContents8,
     },
     {
       num: "9",
-      title: "과연 이렇게 사는 삶이 맞는 삶일까요?",
+      title: "과연 이렇게 사는 삶이\n맞는 삶일까요?",
       content: cardContents9,
     },
     {
       num: "10",
-      title: "과연 이렇게 사는 삶이 맞는 삶일까요?",
+      title: "과연 이렇게 사는 삶이\n맞는 삶일까요?",
       content: cardContents10,
     },
   ];
 
   return (
     <div className="body-container">
-      {cardsData.map((card, index) => (
-        <Card
-          key={index}
-          num={card.num}
-          title={card.title}
-          contents={card.content}
-        />
-      ))}
+      <div className="cards-grid">
+        {cardsData.map((card, index) => (
+          <Card
+            key={index}
+            num={card.num}
+            title={card.title}
+            contents={card.content}
+            onPrint={handlePrint}
+          />
+        ))}
+        <div className="card-placeholder">
+          고민상황을<br></br>눌러보세요
+        </div>
+        <div className="usage-info">
+          <div className="usage-title">이용자 수</div>
+          <div className="usage-count">{count}명</div>
+        </div>
+      </div>
     </div>
   );
 };
