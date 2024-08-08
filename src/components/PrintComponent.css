@@ -42,7 +42,7 @@
   padding-left: 5%;
   text-align: left;
   align-content: center;
-  font-size: 0.5rem;
+  font-size: 1rem;
   font-family: "Title_Medium";
 }
 
@@ -84,7 +84,8 @@
 .recommend-content {
   text-align: justify;
   height: 60%;
-  font-size: 0.49rem;
+  font-size: 0.55rem;
+  line-height: 150%;
   align-content: top;
   font-family: "Batang_Regular";
 }
