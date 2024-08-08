@@ -7,7 +7,7 @@
 }
 
 .app-header {
-  height: 25%;
+  height: 27%;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -16,7 +16,7 @@
 
 .app-title {
   align-content: center;
-  height: 35%;
+  height: 40%;
   width: 100%;
   color: #5c8356;
   font-family: "Pretendard-ExtraBold";
@@ -26,7 +26,7 @@
 .about {
   text-align: center;
   align-content: center;
-  height: 40%;
+  height: 35%;
   width: 100%;
   color: #565656;
   font-family: "Pretendard-Regular";
