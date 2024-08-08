@@ -1,7 +1,7 @@
 {
   "name": "GyomunLibrary",
-  "short_name": "App",
-  "start_url": "/index.html",
+  "short_name": "GyomunLibrary",
+  "start_url": "/",
   "display": "standalone",
   "orientation": "landscape",
   "icons": [
