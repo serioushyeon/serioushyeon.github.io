@@ -20,7 +20,10 @@ const PrintComponent = React.forwardRef(({ num, title, contents }, ref) => {
       </div>
       {content && content.bookTitle && (
         <>
-          <div className="book-title">{`「${content.bookTitle}」`}</div>
+          <div className="print-section">
+            <div className="book-title">{`「${content.bookTitle}」`}</div>
+            <div className="short-recommender">{`추천인 : ${content.shortRecommender}`}</div>
+          </div>
           <div className="locate">{content.locate}</div>
           <div className="content">{content.content}</div>
           <div className="recommender-section">
