@@ -95,7 +95,7 @@
 }
 
 .recommender {
-  height: 40%;
+  height: 25%;
   width: 100%;
   font-size: 0.6rem;
   font-family: "Title_Medium";
@@ -104,7 +104,7 @@
 
 .recommend-content {
   text-align: justify;
-  height: 60%;
+  height: 75%;
   font-size: 0.8rem;
   line-height: 120%;
   align-content: top;
@@ -119,7 +119,7 @@
   align-content: center;
 }
 .logo img {
-  object-fit: none; /* 이미지 비율 유지 */
+  object-fit: contain; /* 이미지 비율 유지 */
   width: 100%;
 }
 @media print {
