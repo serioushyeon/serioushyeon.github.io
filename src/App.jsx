@@ -13,7 +13,7 @@ const App = () => {
           마음 속 고민들을 책으로 치유받아보는 것은 어떨까요?<br></br>고민이
           되는 내용을 눌러보세요.
         </div>
-        <div className="app-section">고민상황별</div>
+        <div className="app-section">도서관치유책</div>
       </header>
       <Body />
     </div>
