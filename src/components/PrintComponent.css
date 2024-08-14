@@ -1,9 +1,12 @@
 .print-component {
   font-family: Arial, sans-serif;
   width: 79mm;
-  height: 200mm;
+  height: 170mm;
+  box-sizing: border-box;
 }
-
+* {
+  border: 1px dotted #000;
+}
 .print-header {
   display: flex;
   justify-content: space-between;
@@ -47,7 +50,7 @@
 .book-title {
   text-align: left;
   height: 100%;
-  width: 75%;
+  width: 70%;
   text-align: left;
   align-content: center;
   font-size: 1rem;
@@ -56,10 +59,10 @@
 .short-recommender {
   text-align: left;
   height: 100%;
-  width: 25%;
+  width: 30%;
   text-align: right;
   align-content: center;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   font-family: "Title_Medium";
 }
 
@@ -120,16 +123,15 @@
 }
 .logo img {
   object-fit: none; /* 이미지 비율 유지 */
+  width: 100%;
 }
 @media print {
   @page {
     size: 79mm 170mm;
     margin: 0;
-    padding: 0;
   }
 
   body {
     margin: 0;
-    padding: 0;
   }
 }
