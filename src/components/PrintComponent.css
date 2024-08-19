@@ -51,7 +51,7 @@
   width: 70%;
   text-align: left;
   align-content: center;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-family: "MBold";
 }
 .short-recommender {
@@ -79,7 +79,7 @@
   padding-left: 5%;
   padding-right: 5%;
   font-size: 2.6px;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-family: "MSemiBold";
   line-height: 150%;
   text-align: center;
