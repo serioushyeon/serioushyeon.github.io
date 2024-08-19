@@ -115,7 +115,7 @@
 .logo {
   display: flex; /* Flexbox 사용 */
   justify-content: center; /* 수평 가운데 정렬 */
-  height: 11.4%;
+  height: 11.7%;
   width: 100%;
   align-content: center;
 }
@@ -124,6 +124,7 @@
   width: 90%;
 }
 .line {
+  color: white;
   height: 0.3%;
   text-align: center;
   justify-content: top;
