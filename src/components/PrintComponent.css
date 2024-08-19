@@ -24,11 +24,11 @@
 .title {
   height: 100%;
   width: 70%;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   padding-right: 5%;
   align-content: center;
   text-align: center;
-  font-family: "Batang_Regular";
+  font-family: "MSemiBold";
   white-space: pre-wrap;
 }
 .print-section {
@@ -51,8 +51,8 @@
   width: 70%;
   text-align: left;
   align-content: center;
-  font-size: 1rem;
-  font-family: "Title_Medium";
+  font-size: 0.8rem;
+  font-family: "MBold";
 }
 .short-recommender {
   text-align: left;
@@ -70,7 +70,7 @@
   padding-right: 6%;
   height: 6%;
   font-size: 0.8rem;
-  font-family: "Title_Light";
+  font-family: "MSemiBold";
 }
 
 .content {
@@ -78,9 +78,9 @@
   height: 41%;
   padding-left: 5%;
   padding-right: 5%;
-  font-size: 2.8px;
+  font-size: 2.6px;
   font-size: 0.9rem;
-  font-family: "Batang_Regular";
+  font-family: "MSemiBold";
   line-height: 150%;
   text-align: center;
   white-space: pre-wrap;
@@ -99,7 +99,7 @@
   height: 25%;
   width: 100%;
   font-size: 0.6rem;
-  font-family: "Title_Medium";
+  font-family: "MBold";
   text-align-last: justify;
 }
 
@@ -109,7 +109,7 @@
   font-size: 0.8rem;
   line-height: 120%;
   align-content: top;
-  font-family: "Batang_Regular";
+  font-family: "MSemiBold";
   white-space: pre-wrap;
 }
 .logo {
@@ -124,10 +124,10 @@
   width: 90%;
 }
 .line {
-  color: white;
+  color: #000;
   height: 0.3%;
   text-align: center;
-  justify-content: top;
+  align-content: top;
 }
 @media print {
   @page {

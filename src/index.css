@@ -76,3 +76,23 @@ body {
   font-family: "Pretendard-Thin";
   src: url("./fonts/Pretendard-Thin.woff");
 }
+@font-face {
+  font-family: "MBold";
+  src: url("./fonts/MaruBuri_Bold.ttf");
+}
+@font-face {
+  font-family: "MExtraLight";
+  src: url("./fonts/MaruBuri_ExtraLight.ttf");
+}
+@font-face {
+  font-family: "MLight";
+  src: url("./fonts/MaruBuri_Light.ttf");
+}
+@font-face {
+  font-family: "MRegular";
+  src: url("./fonts/MaruBuri_Regular.ttf");
+}
+@font-face {
+  font-family: "MSemiBold";
+  src: url("./fonts/MaruBuri_SemiBold.ttf");
+}
