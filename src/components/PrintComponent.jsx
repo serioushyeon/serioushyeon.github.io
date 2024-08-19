@@ -14,6 +14,9 @@ const PrintComponent = React.forwardRef(({ num, title, contents }, ref) => {
 
   return (
     <div className="print-component" ref={ref}>
+      <div className="line">
+        -------------------------------------------------------
+      </div>
       <div className="print-header">
         <div className="num">{num}</div>
         <div className="title">{title}</div>
@@ -34,6 +37,9 @@ const PrintComponent = React.forwardRef(({ num, title, contents }, ref) => {
       )}
       <div className="logo">
         <img src={logo} alt="Logo" />
+      </div>
+      <div className="line">
+        -------------------------------------------------------
       </div>
     </div>
   );

@@ -115,13 +115,18 @@
 .logo {
   display: flex; /* Flexbox 사용 */
   justify-content: center; /* 수평 가운데 정렬 */
-  height: 12%;
+  height: 11.4%;
   width: 100%;
   align-content: center;
 }
 .logo img {
   object-fit: contain; /* 이미지 비율 유지 */
   width: 90%;
+}
+.line {
+  height: 0.3%;
+  text-align: center;
+  justify-content: top;
 }
 @media print {
   @page {
